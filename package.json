@@ -1,0 +1,16 @@
+{
+  "name": "webapp-setup",
+  "version": "1.0.0",
+  "description": "How to setup a Node project for Home applications",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hans-iosoft/io-Node.git"
+  },
+  "keywords": [],
+  "author": "J.H. Mars, F.X. Mars",
+  "license": "ISC"
+} 
