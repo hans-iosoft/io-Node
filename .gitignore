@@ -1,0 +1,20 @@
+# Cache files  
+.eslintcache
+.npm
+*.tsbuildinfo
+
+# Directories
+dist/           # This is the build process will output code.
+node_modules/   # The location of all Node modules
+
+# Env files     # A good safeguard against accidentally publishing
+.env.           #  private information, including security keys
+.env.test
+
+# Logs
+*.log
+logs
+npm-debug.log*
+
+# Misc files
+notes.md        # Personal project notes, not to be published
