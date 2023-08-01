@@ -4,9 +4,11 @@
   "description": "How to setup a Node project for Home applications",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc && npm run build:cp-public",
-    "build:cp-public": "copy ./public/*.* ./dist",
+    "build": "run-s build:clean type webpack",
+    "build:clean": "rimraf ./dist",
     "type": "tsc --noEmit",
+    "webpack": "webpack",
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,17 @@
   "author": "J.H. Mars, F.X. Mars",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.1.6"
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "html-webpack-plugin": "^5.5.3",
+    "typescript": "^5.1.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "webpack-dev-server": "^4.15.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "bugs": {
     "url": "https://github.com/hans-iosoft/io-Node/issues"
