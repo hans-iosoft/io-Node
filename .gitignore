@@ -18,3 +18,4 @@ npm-debug.log*
 
 # Misc files
 notes.md        # Personal project notes, not to be published
+node_modules
